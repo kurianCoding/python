@@ -24,6 +24,19 @@ def splitMiddle(arg1):
     :returns: two parts 
 
     """
+    length=len(arg1)
+    part1=length/2
+
+    if length%2==1:
+        length_part1=part1
+        length_part2=part1+1
+    else:
+        length_part1=part1
+        length_part2=part1
+
+    strpart1=arg1[:length_part1]
+    strpart2=arg1[length_part2:length]
+    return strpart1,strpart2
 
 def checkPallindrome(arg1):
     """a funciotn to check if a string is a pallindrome
@@ -34,7 +47,7 @@ def checkPallindrome(arg1):
     """
     string=arg1
     first,second=splitMiddle(string)
-    if(stringCompare(first,reverseString(second)):
+    if stringCompare(first,reverseString(second)):
             return "is Palindrome"
     else:
             return"not Palindrome"
