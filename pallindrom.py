@@ -1,5 +1,4 @@
-@classmethod
-def stringCompare(arg1):
+def stringCompare(arg1,arg2):
     """TODO: Docstring for stringCompare.finding if one string is equal to other
 
     :arg1: TODO
@@ -8,7 +7,16 @@ def stringCompare(arg1):
     :returns: TODO
 
     """
-    pass
+    if len(arg1)==len(arg2):
+        for j in range(len(arg1)):
+            if arg1[j]==arg2[j]:
+                if j==len(arg1)-1:
+                    return True
+    #if the function hasn't returned true by this stage then they are not equal
+        return False 
+    else:
+        return False
+  
 def reverseString(arg1):
     """TODO: Docstring for function. to reverse a given string.
 
@@ -54,4 +62,4 @@ def checkPallindrome(arg1):
             return"not Palindrome"
 
 string = raw_input() 
- print checkPallindrome(string)
+print checkPallindrome(string)
