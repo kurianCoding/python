@@ -57,9 +57,9 @@ def checkPallindrome(arg1):
     string=arg1
     first,second=splitMiddle(string)
     if stringCompare(first,reverseString(second)):
-            return "is Palindrome"
+            return "YES"
     else:
-            return"not Palindrome"
+            return"NO"
 
 string = raw_input() 
 print checkPallindrome(string)
