@@ -12,11 +12,12 @@ def stringCompare(arg1):
 def reverseString(arg1):
     """TODO: Docstring for function. to reverse a given string.
 
-    :arg1: TODO
-    :returns: TODO
+    :arg1: a string 
+    :returns: return the reversed string 
 
     """
-    pass
+    string=  arg1[::-1] 
+    return string
 def splitMiddle(arg1):
     """TODO: Docstring for function.to split any given string to two equal halves
 
@@ -52,5 +53,5 @@ def checkPallindrome(arg1):
     else:
             return"not Palindrome"
 
- string = raw_input() 
+string = raw_input() 
  print checkPallindrome(string)
