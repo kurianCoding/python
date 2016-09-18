@@ -19,4 +19,3 @@ arrayOfTi=[]
 for i in range int(numberOfTi):
     node=raw_input().split(" ")
     arrayOfTi[i]=node
-
