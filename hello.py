@@ -1,3 +1,3 @@
-def init():
-    print"program is starting..."
-
+w=int(raw_input())
+for i in range(10):
+       print"hello"
