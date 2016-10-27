@@ -1,3 +1,4 @@
+
 def minFunc(arg1):
     """TODO: Docstring for minFunc.
 
