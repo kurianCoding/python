@@ -44,6 +44,6 @@ A web page that has the most relevant information to our query.
 
 #### How it works
 
-#### Pesudo code
+#### Pseudo code
 
 #### Draw backs
