@@ -43,6 +43,26 @@ Is a web page that *links to* a lot of authoritative web pages.
 A web page that has the most relevant information to our query.
 
 #### How it works
+Following pesudo code illustrates the working of this algorithm.
+
+Iterate(G,k):
+
+- for all page p in G:
+    - update value of all x<sub>p</sub>
+    - update value of all y<sub>p</sub>
+    	
+- normalize X and Y
+    
+- return x <sub>k</sub> and y<sub>k</sub>
+    	
+Filter(G,k,c):
+    c is a parameter that affects the depth and breadth of our search
+    G is the graph
+    the k node near which to find the behaviour of pages
+    x,y=Iterate(G,k)
+    return the c largest x as the authorities.
+    return the c largest y as hubs.
+    
 
 #### Pseudo code
 
