@@ -56,12 +56,12 @@ Iterate(G,k):
 - return x <sub>k</sub> and y<sub>k</sub>
     	
 Filter(G,k,c):
-    c is a parameter that affects the depth and breadth of our search
-    G is the graph
-    the k node near which to find the behaviour of pages
-    x,y=Iterate(G,k)
-    return the c largest x as the authorities.
-    return the c largest y as hubs.
+- c is a parameter that affects the depth and breadth of our search
+- G is the graph
+- the k node near which to find the behaviour of pages
+- x,y=Iterate(G,k)
+- return the c largest x as the authorities.
+- return the c largest y as hubs.
     
 
 #### Pseudo code
