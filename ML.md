@@ -80,6 +80,7 @@ in G<sub>query</sub> After applying &#921; and &#927;.
 	- links contained in the page
 	   -  Following format:
 
+
 |page |score |links to |
 |-|-|-|
 |1|7|3|
