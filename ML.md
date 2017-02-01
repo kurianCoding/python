@@ -74,5 +74,38 @@ in G<sub>query</sub> After applying &#921; and &#927;.
   pages in G<sub>query</sub> converge within allowable limit.
 
 #### Pseudo code
+- Input
+	- page score(based on number of occurrence of query string or
+	  token)
+	- links contained in the page
+	   -  Following format:
+
+|page |score |links to |
+|-|-|-|
+|1|7|3|
+
+explanation: page name is 1 it has a link to page 3 and its score based
+on the query string occurrence.
+
+- initialise the x-authority and y-hub score of all pages to 1.
+- for each page update
+	- add all the y hub scores of all pages contained  in this page
+	  and update this as new x-authority score.
+	- add all x-authority scores of pages which contain a reference
+	  to this page. Update this as the y-hub score of this page.
+	- normalise by dividing with L<sub>2</sub> norm of sum of all x
+	  and y.
+	- check if the current x and y scores fall within margin of
+	  allowable deviation.
+
+- rank top 10 pages according to their x-authority scores.
+
+- rank top 10 pages according to their y-hub scores.
+
+- output
+	- authority pages
+	- hub pages
+
+    
 
 #### Draw backs
