@@ -81,7 +81,7 @@ in G<sub>query</sub> After applying &#921; and &#927;.
 	   -  Following format:
 
 
-|page |score |links to |
+|page |score |links to|
 |-|-|-|
 |1|7|3|
 
