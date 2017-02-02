@@ -110,3 +110,22 @@ on the query string occurrence.
     
 
 #### Draw backs
+
+
+
+#### Betweenness Centrality
+
+This is a measure of how common a particular node is to other nodes in
+the given graph.
+
+*Algorithm*
+1. store a queue of all nodes in the graph
+- for the first node n find the shortest path from this node to other
+  nodes of the graph.
+  - for a given short path to a node m let the number of nodes
+    transeversed be P. 
+  - then the centrality score of each node is incremented by 1/P.
+- repeat the above for all the nodes in the graph.
+- the node with the greatest centrality score is the  center most node.
+
+#### Eigen Vector Centrality
