@@ -1,4 +1,33 @@
-##hits ranking algorithm
+## hits ranking algorithm
+class node():
+    def __init__(self,name):
+        self.name=name
+        self.friend=[]
+        self.hubScore=1
+        self.authScore=1
+
+## to add all the nodes to which this one points to and store that in
+## the array called friend
+    def referTo(self,friend):
+        append(self.friend,friend)
+        return self
+
+## add to the hub score of the node given another node
+    def addHubScore(self,node):
+        self.hubScore=self.hubScore+node.authScore
+        return
+## add to the authority score of the node given another node
+    def addAuthscore(self,node):
+        self.authScore=self.authScore+node.hubScore
+        return
+
+## returns the list of those nodes which are refered to by this node
+    def referList(self):
+        return self.friend
+
+## return the name of the node
+    def __string__():
+        return self.name
 
 ## sorts the array in terms of hits rankging.
 def sort_rank():
