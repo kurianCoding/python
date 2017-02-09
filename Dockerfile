@@ -25,5 +25,13 @@ RUN cd /usr/src/python \
 	&& make -j$(nproc) 
 RUN cd /usr/src/python \
 	&& make install 
+RUN apt-get update -y
+RUN apt-get install -y build-essential python-dev python-setuptools
+RUN apt-get update -y
+RUN easy_install pip
+RUN pip install --upgrade pip
+RUN pip install scipy
+RUN pip install numpy
+RUN pip install matplotlib
 RUN mkdir /code
 WORKDIR /code
