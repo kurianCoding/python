@@ -39,6 +39,32 @@ It is the percentage of occurrence the association rule expressed
 as a probability. 
 A implies B: P(A,B)/P(A) or B implies A: P(A,B)/P(B).
 
-#### minconf and minsuppourt
+#### Minconf and Minsuppourt
 they are thresholds of confidence and support parameter which are
 specified by the user.
+
+#### apriori algorithm
+
+pseudo code:
+
+  L<sub>1</sub> =  1 item set which has support greater than min-support.
+
+    for each new set L<sub>k-1</sub>:
+        if L<sub>k-1</sub> = null:
+	   break
+        else:
+	   C<sub>k</sub>=apriori-gen(L<sub>k-1</sub>)
+           use this C<sub>k</sub> as the new L<sub>k</sub>
+	   filter the elements of C<sub>k</sub> which have min-support.
+	   assign this filtered set as the new L<sub>k-1</sub>
+
+    return Union of all sets in L<sub>k</sub>
+
+apriori-gen:
+    intput(L<sub>k-1</sub>)
+    make all possible combinations of items in L<sub>k-1</sub>,
+    preventing duplication. 
+    for each element so created find all the possible subsets, see if
+    these subsets are present in L<sub>k-1</sub> or any of the previous
+    itrerations. If not remove them from the list. Return the remaining
+    filtered list as the apriori-gen list.
