@@ -47,7 +47,7 @@ specified by the user.
 
 pseudo code:
 
-    L<sub>1</sub> =  1 item set which has support greater than min-support.
+  L<sub>1</sub> =  1 item set which has support greater than min-support.
 
     for each new set L<sub>k-1</sub>:
         if L<sub>k-1</sub> = null:
