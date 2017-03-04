@@ -6,7 +6,8 @@ RUN apt-get install -y wget
 RUN apt-get install -y xz-utils
 RUN apt-get install -y python
 RUN apt-get install -y python-dev python-setuptools
-RUN apt-get install -y python-pip
+ADD get-pip.py /get-pip.py
+RUN python /get-pip.py
 RUN pip install numpy
 RUN pip install scipy
 RUN pip install matplotlib
