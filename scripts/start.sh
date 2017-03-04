@@ -1,4 +1,4 @@
 docker start python-dev
 docker exec -it \
 	python-dev \
-	/bin/bash
+	/bin/bash -c "pip --version && python --version && /bin/bash"
