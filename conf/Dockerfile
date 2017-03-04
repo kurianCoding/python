@@ -11,6 +11,7 @@ RUN python /get-pip.py
 RUN pip install numpy
 RUN pip install scipy
 RUN pip install matplotlib
+RUN pip install scikit-learn
 #python zip
 RUN mkdir /code
 WORKDIR /code
