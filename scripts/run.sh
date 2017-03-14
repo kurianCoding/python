@@ -1,8 +1,8 @@
-docker rm -f python-dev
-docker run --name=python-dev \
+docker rm -f tensor-dev
+docker run --name=tensor-dev \
 		-ti \
 		-d \
-		-h=python-dev \
+		-h=tensor-dev \
 		-v $PWD/../code:/code \
 		$1 /bin/bash
 
