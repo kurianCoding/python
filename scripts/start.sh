@@ -1,4 +1,4 @@
-docker start tensor-dev
+docker start python-dev
 docker exec -it \
-	tensor-dev \
+	python-dev \
 	/bin/bash -c "pip --version && python --version && /bin/bash"
