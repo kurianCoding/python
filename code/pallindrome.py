@@ -13,24 +13,24 @@ def stringCompare(arg1,arg2):
                 if j==len(arg1)-1:
                     return True
     #if the function hasn't returned true by this stage then they are not equal
-        return False 
+        return False
     else:
         return False
-  
+
 def reverseString(arg1):
     """TODO: Docstring for function. to reverse a given string.
 
-    :arg1: a string 
-    :returns: return the reversed string 
+    :arg1: a string
+    :returns: return the reversed string
 
     """
-    string=  arg1[::-1] 
+    string=  arg1[::-1]
     return string
 def splitMiddle(arg1):
     """TODO: Docstring for function.to split any given string to two equal halves
 
-    :arg1: string to be split 
-    :returns: two parts 
+    :arg1: string to be split
+    :returns: two parts
 
     """
     length=len(arg1)
@@ -50,16 +50,16 @@ def splitMiddle(arg1):
 def checkPallindrome(arg1):
     """a funciotn to check if a string is a pallindrome
 
-    :arg1: is the string to be checked 
-    :returns: a string  
+    :arg1: is the string to be checked
+    :returns: a string
 
     """
     string=arg1
     first,second=splitMiddle(string)
     if stringCompare(first,reverseString(second)):
-            return "YES"
+        return "YES"
     else:
-            return"NO"
+        return"NO"
 
-string = raw_input() 
+string = raw_input()
 print checkPallindrome(string)

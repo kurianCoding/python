@@ -9,5 +9,8 @@ RUN apt-get install -y python-dev python-setuptools
 ADD get-pip.py /get-pip.py
 RUN python /get-pip.py
 #python zip
+RUN pip install numpy
+RUN pip install scipy
+RUN pip install Theano[doc,test]
 RUN mkdir /code
 WORKDIR /code

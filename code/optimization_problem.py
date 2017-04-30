@@ -22,6 +22,6 @@ def shiftRight(array):
         else:
             res.append(array[i]+nextup)
             nextup=0
-        
+
     return res
 print shiftRight([1,2,1])
