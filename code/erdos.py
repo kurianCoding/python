@@ -5,7 +5,6 @@
 # and you, you can get your erdos
 # number
 
-# TODO
 # a class to hold the persons name and the names
 # of all the people he has done research with and 
 # make a list of it
@@ -19,13 +18,23 @@ class res:
         this.name=''
         return
 
+    # a method to add colabs
     def addColab(newres):
         # add a colab with name and erdos number
         this.colabs.push(newres.name)
         if newres.erdos<100&&this.erdos>(newres.erdos+1):
             this.erdos=newres.erdos+1
         return
+
+    # a method which will take the erdos number of an
+    # individual and assign it to that persons class
+    def setErdosNo(erdos):
+        this.erdos=erdos
+        return
     
+    # this method goes through erdos numbers of all the
+    # colabs of the person and then finds the erdos number
+    # this person
     def getErdosNo():
         # get erdos number of the person
         for person in this.colabs:
@@ -37,9 +46,6 @@ class res:
         return this.name+" "+this.erdos
 
     
-# TODO 
-# a method which will take the erdos number of an
-# individual and assign it to that persons class
 
 
 # TODO
