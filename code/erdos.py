@@ -45,8 +45,6 @@ class res:
     def __toString()__:
         return this.name+" "+this.erdos
 
-    
-
 
 # TODO
 # a method which will iterate over all the co authors
