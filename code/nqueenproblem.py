@@ -13,3 +13,11 @@ def isSafe(board,row,col):
     for i in range(col):
         if board[row][i]==True:
             return False
+   
+   j,t=row,col
+   # if there is a queen diagonally left of it in the current row
+   # and column
+   while(j>0&&t>0):
+       if broad[j][t]==True:
+           return False
+        j--,t--
