@@ -21,3 +21,9 @@ def isSafe(board,row,col):
        if broad[j][t]==True:
            return False
         j--,t--
+   # if there is queen in upper diagonal of this current row
+   # and column
+   x,y=0,0
+   while(x<0&&y>0):
+       if broad[x][y]==True:
+           return False
